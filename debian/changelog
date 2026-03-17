@@ -1,0 +1,7 @@
+qcom-fastcv-binaries1 (1.8.5-1) UNRELEASED; urgency=medium
+
+  * Initial packaging.
+    - Includes changes starting from the initial upstream commit.
+  * Promote version 1.8.5.
+
+ -- Keerthi Gowda <kbalehal@san-w175-na3-01.qualcomm.com>  Tue, 17 Mar 2026 15:42:05 -0700
