@@ -1,7 +1,11 @@
 qcom-fastcv-binaries1 (1.8.5-1) UNRELEASED; urgency=medium
 
+  [ Keerthi Gowda ]
   * Initial packaging.
     - Includes changes starting from the initial upstream commit.
   * Promote version 1.8.5.
 
- -- Keerthi Gowda <kbalehal@san-w175-na3-01.qualcomm.com>  Tue, 17 Mar 2026 15:42:05 -0700
+  [ GitHub Service Bot ]
+  * New upstream release (Artifactory tag: 260310)
+
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 18 Mar 2026 20:52:55 +0000
