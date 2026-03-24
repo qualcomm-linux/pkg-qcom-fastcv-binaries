@@ -1,4 +1,4 @@
-Source: qcom-fastcv-binaries1
+Source: qcom-fastcv-binaries
 Maintainer: Pulkit Singh Tak <ptak@qti.qualcomm.com>
 Standards-Version: 4.6.2
 Section: misc
@@ -21,6 +21,6 @@ Description: Qualcomm libfastcvopt
  Qualcomm CPU and DSP optimized libs for running CV algorithms
 Section: libs
 Priority: optional
-Depends: ${misc:Depends}, libc6 (>= 2.38), qcom-fastrpc1 (>= 1.0.0), qcom-property-vault (>= 1.0.0)
+Depends: ${misc:Depends}, libc6 (>= 2.38), qcom-fastrpc1 (>= 1.0.0)
 Breaks: libfastcv, qcom-fastcv-binaries
 Replaces: libfastcv, qcom-fastcv-binaries
