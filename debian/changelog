@@ -1,4 +1,4 @@
-qcom-fastcv-binaries1 (1.8.5-1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.5-1) UNRELEASED; urgency=medium
 
   [ Keerthi Gowda ]
   * Initial packaging.
