@@ -11,7 +11,7 @@ Description: Qualcomm libfastcvopt - Development files
  Development files for Qualcomm fastcv library
 Section: libdevel
 Priority: optional
-Depends: ${misc:Depends}, qcom-fastcv-binaries1 (= 1.8.0)
+Depends: ${misc:Depends}, qcom-fastcv-binaries1 (= ${binary:Version}),
 Breaks: libfastcv-dev, qcom-fastcv-binaries-dev
 Replaces: libfastcv-dev, qcom-fastcv-binaries-dev
 
