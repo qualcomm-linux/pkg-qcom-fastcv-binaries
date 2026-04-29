@@ -1,4 +1,4 @@
-qcom-fastcv-binaries (1.8.6) UNRELEASED; urgency=low
+qcom-fastcv-binaries (1.8.6-1) UNRELEASED; urgency=low
 
   * Removed installation rules of static libs from dev package
   * Commenting warnings in cv_property_get method for cv-noship/fastcv
