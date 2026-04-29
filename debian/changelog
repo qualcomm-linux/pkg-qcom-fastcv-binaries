@@ -1,4 +1,4 @@
-qcom-fastcv-binaries (1.8.6) trixie; urgency=low
+qcom-fastcv-binaries (1.8.6) UNRELEASED; urgency=low
 
   * Removed installation rules of static libs from dev package
   * Commenting warnings in cv_property_get method for cv-noship/fastcv
@@ -6,34 +6,6 @@ qcom-fastcv-binaries (1.8.6) trixie; urgency=low
   * Adding fastcv dsp skel libs for shikra target
 
  -- Pulkit Singh Tak <ptak@qti.qualcomm.com>  Wed, 22 Apr 2026 16:16:32 +0530
-
-qcom-fastcv-binaries (1.8.5-5) unstable; urgency=medium
-
-  [ Pulkit Singh Tak ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 08 Apr 2026 06:32:32 +0000
-
-qcom-fastcv-binaries (1.8.5-4) unstable; urgency=medium
-
-  [ Pulkit Singh Tak ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 08 Apr 2026 03:30:46 +0000
-
-qcom-fastcv-binaries (1.8.5-3) unstable; urgency=medium
-
-  [ Pulkit Singh Tak ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Fri, 27 Mar 2026 03:24:05 +0000
-
-qcom-fastcv-binaries (1.8.5-2) unstable; urgency=medium
-
-  [ Pulkit Singh Tak ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Thu, 26 Mar 2026 15:58:51 +0000
 
 qcom-fastcv-binaries (1.8.5-1) unstable; urgency=medium
 
