@@ -2,6 +2,7 @@
 # binaries running on Hexagon DSPs (so a foreign architecture);
 # these are not built using Debian tooling and are not currently
 # trying to meet Debian expectations for host files
+arch-independent-package-contains-binary-or-object [usr/lib/dsp/dsp/cdsp/cv/*/*/*.so]
 binary-from-other-architecture [usr/lib/dsp/dsp/cdsp/cv/*/*/*.so]
 hardening-no-relro [usr/lib/dsp/dsp/cdsp/cv/*/*/*.so]
 shared-library-lacks-prerequisites [usr/lib/dsp/dsp/cdsp/cv/*/*/lib*.so]

@@ -32,7 +32,7 @@ Description: Qualcomm FastCV - shared libraries
  This package contains shared libraries for the host system.
 
 Package: qcom-fastcv-binaries
-Architecture: arm64
+Architecture: all
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qualcomm FastCV - DSP binaries
  Qualcomm FastCV offers an optimized computer vision (CV) library
