@@ -4,7 +4,7 @@
 	dh $@
 
 override_dh_strip:
-	dh_strip -X/usr/lib/dsp/dsp/cdsp/cv/
+	dh_strip -X/usr/lib/dsp/cdsp/cv/
 
 # already run during proprietary build; currently not reincluded downstream as
 # the file layout is different; could try resplitting the dwz data
