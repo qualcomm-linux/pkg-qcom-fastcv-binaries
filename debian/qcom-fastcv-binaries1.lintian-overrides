@@ -3,5 +3,6 @@
 # these are not built using Debian tooling and are not currently
 # trying to meet Debian expectations for host files
 binary-from-other-architecture [usr/lib/dsp/dsp/cdsp/cv/*/*/*.so]
-shared-library-lacks-stack-section [usr/lib/dsp/dsp/cdsp/cv/*/*/lib*.so]
 hardening-no-relro [usr/lib/dsp/dsp/cdsp/cv/*/*/*.so]
+shared-library-lacks-prerequisites [usr/lib/dsp/dsp/cdsp/cv/*/*/lib*.so]
+shared-library-lacks-stack-section [usr/lib/dsp/dsp/cdsp/cv/*/*/lib*.so]
