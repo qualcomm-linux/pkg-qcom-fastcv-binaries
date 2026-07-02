@@ -1,0 +1,2 @@
+# nature of proprietary software
+source-contains-prebuilt-binary [qcom-fastcv-binaries1/arm64/usr/lib/dsp/cdsp/cv/*/*/*.so]
