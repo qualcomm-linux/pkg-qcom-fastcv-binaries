@@ -1,5 +1,7 @@
 Source: qcom-fastcv-binaries
 Maintainer: Pulkit Singh Tak <ptak@qti.qualcomm.com>
+Uploaders:
+ Loïc Minier <loic.minier@oss.qualcomm.com>,
 Standards-Version: 4.6.2
 Section: misc
 Rules-Requires-Root: no
