@@ -8,6 +8,7 @@ Build-Depends:
  debhelper-compat (= 13),
  libfastrpc-dev,
  libglib2.0-dev,
+Homepage: https://www.qualcomm.com/developer/software/qualcomm-fastcv-sdk
 
 Package: libfastcvopt-dev
 Architecture: arm64
