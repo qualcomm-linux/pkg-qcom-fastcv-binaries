@@ -24,6 +24,6 @@ Description: Qualcomm libfastcvopt
  Qualcomm CPU and DSP optimized libs for running CV algorithms
 Section: libs
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, libfastrpc-dev (>= 1.0.0)
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libfastcv, qcom-fastcv-binaries
 Replaces: libfastcv, qcom-fastcv-binaries
