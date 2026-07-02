@@ -9,6 +9,8 @@ Build-Depends:
  libfastrpc-dev,
  libglib2.0-dev,
 Homepage: https://www.qualcomm.com/developer/software/qualcomm-fastcv-sdk
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries
+Vcs-Git: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries.git
 
 Package: libfastcvopt-dev
 Architecture: arm64
