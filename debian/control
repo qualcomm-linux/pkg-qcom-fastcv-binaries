@@ -11,18 +11,14 @@ Build-Depends:
 
 Package: qcom-fastcv-binaries-dev
 Architecture: arm64
-Description: Qualcomm libfastcvopt - Development files
- Development files for Qualcomm fastcv library
 Section: libdevel
 Depends: ${misc:Depends}, qcom-fastcv-binaries1 (= ${binary:Version}),
-Breaks: libfastcv-dev, qcom-fastcv-binaries-dev
-Replaces: libfastcv-dev, qcom-fastcv-binaries-dev
+Description: Qualcomm libfastcvopt - Development files
+ Development files for Qualcomm fastcv library
 
 Package: qcom-fastcv-binaries1
 Architecture: arm64
-Description: Qualcomm libfastcvopt
- Qualcomm CPU and DSP optimized libs for running CV algorithms
 Section: libs
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libfastcv, qcom-fastcv-binaries
-Replaces: libfastcv, qcom-fastcv-binaries
+Description: Qualcomm libfastcvopt
+ Qualcomm CPU and DSP optimized libs for running CV algorithms
