@@ -12,7 +12,10 @@ Build-Depends:
 Package: libfastcvopt-dev
 Architecture: arm64
 Section: non-free/libdevel
-Depends: ${misc:Depends}, libfastcvopt1 (= ${binary:Version}),
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libfastcvopt1 (= ${binary:Version}),
 Description: Qualcomm FastCV - development files
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
@@ -22,8 +25,13 @@ Description: Qualcomm FastCV - development files
 
 Package: libfastcvopt1
 Architecture: arm64
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Recommends: qcom-fastcv-binaries
+Breaks:
+ qcom-fastcv-binaries (<< ${source:Version}),
+ qcom-fastcv-binaries (>> ${source:Version}),
 Description: Qualcomm FastCV - shared libraries
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
@@ -33,7 +41,9 @@ Description: Qualcomm FastCV - shared libraries
 
 Package: qcom-fastcv-binaries
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Qualcomm FastCV - DSP binaries
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
@@ -43,7 +53,10 @@ Description: Qualcomm FastCV - DSP binaries
 
 Package: qcom-fastcv-utils
 Architecture: arm64
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libfastcvopt1 (= ${binary:Version}),
 Description: Qualcomm FastCV - Utilities
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
