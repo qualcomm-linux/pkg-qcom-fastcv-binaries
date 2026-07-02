@@ -3,22 +3,34 @@ Maintainer: Pulkit Singh Tak <ptak@qti.qualcomm.com>
 Uploaders:
  Loïc Minier <loic.minier@oss.qualcomm.com>,
 Standards-Version: 4.6.2
-Section: misc
+Section: non-free/libs
 Build-Depends:
  debhelper-compat (= 13),
  libfastrpc-dev,
  libglib2.0-dev,
 
-Package: qcom-fastcv-binaries-dev
+Package: libfastcvopt-dev
 Architecture: arm64
-Section: libdevel
-Depends: ${misc:Depends}, qcom-fastcv-binaries1 (= ${binary:Version}),
-Description: Qualcomm libfastcvopt - Development files
+Section: non-free/libdevel
+Depends: ${misc:Depends}, libfastcvopt1 (= ${binary:Version}),
+Description: Qualcomm FastCV - development files
  Development files for Qualcomm fastcv library
 
-Package: qcom-fastcv-binaries1
+Package: libfastcvopt1
 Architecture: arm64
-Section: libs
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qualcomm libfastcvopt
+Recommends: qcom-fastcv-binaries
+Description: Qualcomm FastCV - shared libraries
+ Qualcomm CPU and DSP optimized libs for running CV algorithms
+
+Package: qcom-fastcv-binaries
+Architecture: arm64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qualcomm FastCV - DSP binaries
+ Qualcomm CPU and DSP optimized libs for running CV algorithms
+
+Package: qcom-fastcv-utils
+Architecture: arm64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qualcomm FastCV - Utilities
  Qualcomm CPU and DSP optimized libs for running CV algorithms

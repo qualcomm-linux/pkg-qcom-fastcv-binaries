@@ -1,6 +1,9 @@
 /.debhelper/
+/*.debhelper.log
+/*.substvars
 /debhelper-build-stamp
 /files
-/qcom-fastcv-binaries1/
-/qcom-fastcv-binaries-dev/
-/*.substvars
+/libfastcvopt1/
+/libfastcvopt-dev/
+/qcom-fastcv-binaries/
+/qcom-fastcv-utils/
