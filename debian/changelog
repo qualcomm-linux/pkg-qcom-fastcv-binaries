@@ -1,8 +1,9 @@
-qcom-fastcv-binaries (1.8.7-0qli+staging1~bpo13+1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.7-0qli+staging1~bpo13+1) trixie; urgency=medium
 
+  [ Loïc Minier ]
   * Rebuild for trixie.
 
- -- Loïc Minier <loic.minier@oss.qualcomm.com>  Fri, 03 Jul 2026 00:03:49 +0000
+ -- root <root@28d333a591f3>  Fri, 03 Jul 2026 17:07:29 +0000
 
 qcom-fastcv-binaries (1.8.7-0qli+staging1~) UNRELEASED; urgency=medium
 
