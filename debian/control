@@ -6,6 +6,7 @@ Standards-Version: 4.6.2
 Section: non-free/libs
 Build-Depends:
  debhelper-compat (= 13),
+Build-Depends-Arch:
  libfastrpc-dev,
  libglib2.0-dev,
 Homepage: https://www.qualcomm.com/developer/software/qualcomm-fastcv-sdk
