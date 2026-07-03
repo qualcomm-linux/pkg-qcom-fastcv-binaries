@@ -1,26 +1,68 @@
 Source: qcom-fastcv-binaries
 Maintainer: Pulkit Singh Tak <ptak@qti.qualcomm.com>
+Uploaders:
+ Loïc Minier <loic.minier@oss.qualcomm.com>,
 Standards-Version: 4.6.2
-Section: misc
-Rules-Requires-Root: no
-Build-Depends: debhelper-compat (= 13)
+Section: non-free/libs
+Build-Depends:
+ debhelper-compat (= 13),
+ libfastrpc-dev,
+ libglib2.0-dev,
+Homepage: https://www.qualcomm.com/developer/software/qualcomm-fastcv-sdk
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries
+Vcs-Git: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries.git
 
-Package: qcom-fastcv-binaries-dev
+Package: libfastcvopt-dev
 Architecture: arm64
-Description: Qualcomm libfastcvopt - Development files
- Development files for Qualcomm fastcv library
-Section: libdevel
-Priority: optional
-Depends: ${misc:Depends}, qcom-fastcv-binaries1 (= ${binary:Version}),
-Breaks: libfastcv-dev, qcom-fastcv-binaries-dev
-Replaces: libfastcv-dev, qcom-fastcv-binaries-dev
+Section: non-free/libdevel
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libfastcvopt1 (= ${binary:Version}),
+Description: Qualcomm FastCV - development files
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains the development files.
 
-Package: qcom-fastcv-binaries1
+Package: libfastcvopt1
 Architecture: arm64
-Description: Qualcomm libfastcvopt
- Qualcomm CPU and DSP optimized libs for running CV algorithms
-Section: libs
-Priority: optional
-Depends: ${misc:Depends}, libc6 (>= 2.38), libfastrpc-dev (>= 1.0.0)
-Breaks: libfastcv, qcom-fastcv-binaries
-Replaces: libfastcv, qcom-fastcv-binaries
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends: qcom-fastcv-binaries
+Breaks:
+ qcom-fastcv-binaries (<< ${source:Version}),
+ qcom-fastcv-binaries (>> ${source:Version}),
+Description: Qualcomm FastCV - shared libraries
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains shared libraries for the host system.
+
+Package: qcom-fastcv-binaries
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Qualcomm FastCV - DSP binaries
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains binaries for Hexagon DSPs.
+
+Package: qcom-fastcv-utils
+Architecture: arm64
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libfastcvopt1 (= ${binary:Version}),
+Description: Qualcomm FastCV - Utilities
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains a test utility.
