@@ -1,3 +1,9 @@
+qcom-fastcv-binaries (1.8.7-0qli+staging1~bpo14+1~) UNRELEASED; urgency=medium
+
+  * Unreleased changes
+
+ -- root <root@440d8a3fe9fe>  Fri, 03 Jul 2026 17:09:38 +0000
+
 qcom-fastcv-binaries (1.8.7-0qli+staging1~bpo13+1) trixie; urgency=medium
 
   [ Loïc Minier ]
