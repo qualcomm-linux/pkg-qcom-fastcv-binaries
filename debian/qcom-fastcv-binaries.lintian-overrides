@@ -3,8 +3,6 @@
 # these are not built using Debian tooling and are not currently
 # trying to meet Debian expectations for host files
 arch-independent-package-contains-binary-or-object [usr/lib/dsp/cdsp/cv/*/*/*.so]
-binary-from-other-architecture [usr/lib/dsp/cdsp/cv/*/*/*.so]
-hardening-no-relro [usr/lib/dsp/cdsp/cv/*/*/*.so]
 shared-library-lacks-prerequisites [usr/lib/dsp/cdsp/cv/*/*/lib*.so]
 shared-library-lacks-stack-section [usr/lib/dsp/cdsp/cv/*/*/lib*.so]
 undeclared-elf-prerequisites (libc.so libdspCV_skel.so libfastcvadsp.so libgcc.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvdsp_skel.so]
