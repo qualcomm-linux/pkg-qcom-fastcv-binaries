@@ -10,7 +10,9 @@ undeclared-elf-prerequisites (libc.so libdspCV_skel.so libgcc.so) [usr/lib/dsp/c
 undeclared-elf-prerequisites (libc.so libgcc.so) [usr/lib/dsp/cdsp/cv/*/*/libdspCV_skel.so]
 undeclared-elf-prerequisites (libdspCV_skel.so libfastcvadsp.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvdsp_skel.so]
 undeclared-elf-prerequisites (libdspCV_skel.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvadsp.so]
+
 # reported here https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries/issues/49
 spelling-error-in-binary implemenation implementation [usr/lib/dsp/cdsp/cv/*/*/libfastcvadsp.so]
+
 # probably false positives, but also reported
 spelling-error-in-binary DsFg Dfsg [usr/lib/dsp/cdsp/cv/*/libfastcvadsp.so]
