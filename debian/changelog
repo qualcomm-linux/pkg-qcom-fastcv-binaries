@@ -1,5 +1,5 @@
-qcom-fastcv-binaries (1.8.7-0qli+staging1~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.7-0qli+staging2.1) UNRELEASED; urgency=medium
 
-  * Initial QLI version for qli-staging.
+  * Initial release.
 
- -- Loïc Minier <loic.minier@oss.qualcomm.com>  Thu, 02 Jul 2026 21:02:38 +0000
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Mon, 13 Jul 2026 13:27:28 +0200
