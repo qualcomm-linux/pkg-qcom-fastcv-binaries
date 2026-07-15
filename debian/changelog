@@ -1,18 +1,12 @@
-qcom-fastcv-binaries (1.8.7-0qli+staging1~bpo14+1~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.7-0qli+staging2~bpo13+1~) UNRELEASED; urgency=medium
 
-  * Unreleased changes
-
- -- root <root@440d8a3fe9fe>  Fri, 03 Jul 2026 17:09:38 +0000
-
-qcom-fastcv-binaries (1.8.7-0qli+staging1~bpo13+1) trixie; urgency=medium
-
-  [ Loïc Minier ]
   * Rebuild for trixie.
 
- -- root <root@28d333a591f3>  Fri, 03 Jul 2026 17:07:29 +0000
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 15 Jul 2026 10:02:23 +0200
 
-qcom-fastcv-binaries (1.8.7-0qli+staging1~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.7-0qli+staging2) forky; urgency=medium
 
-  * Initial QLI version for qli-staging.
+  [ Agathe Porte ]
+  * Initial release.
 
- -- Loïc Minier <loic.minier@oss.qualcomm.com>  Thu, 02 Jul 2026 21:02:38 +0000
+ -- root <root@9a439277131b>  Wed, 15 Jul 2026 07:53:08 +0000
