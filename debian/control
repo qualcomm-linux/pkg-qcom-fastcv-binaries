@@ -5,22 +5,38 @@ Section: misc
 Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13)
 
-Package: qcom-fastcv-binaries-dev
+Package: libfastcvopt-dev
 Architecture: arm64
 Description: Qualcomm libfastcvopt - Development files
  Development files for Qualcomm fastcv library
 Section: libdevel
 Priority: optional
-Depends: ${misc:Depends}, qcom-fastcv-binaries1 (= ${binary:Version}),
-Breaks: libfastcv-dev, qcom-fastcv-binaries-dev
-Replaces: libfastcv-dev, qcom-fastcv-binaries-dev
+Depends: ${misc:Depends}, libfastcvopt1 (= ${binary:Version}),
+Breaks: libfastcv-dev, qcom-fastcv-binaries-dev (<< ${source:Version})
+Replaces: libfastcv-dev, qcom-fastcv-binaries-dev (<< ${source:Version})
 
-Package: qcom-fastcv-binaries1
+Package: libfastcvopt1
 Architecture: arm64
 Description: Qualcomm libfastcvopt
  Qualcomm CPU and DSP optimized libs for running CV algorithms
 Section: libs
 Priority: optional
 Depends: ${misc:Depends}, libc6 (>= 2.38), libfastrpc-dev (>= 1.0.0)
-Breaks: libfastcv, qcom-fastcv-binaries
-Replaces: libfastcv, qcom-fastcv-binaries
+Breaks: libfastcv, qcom-fastcv-binaries, qcom-fastcv-binaries1 (<< ${source:Version})
+Replaces: libfastcv, qcom-fastcv-binaries, qcom-fastcv-binaries1 (<< ${source:Version})
+
+Package: qcom-fastcv-binaries1
+Architecture: all
+Section: oldlibs
+Priority: optional
+Depends: libfastcvopt1 (= ${binary:Version}), ${misc:Depends}
+Description: transitional package for libfastcvopt1
+ This is a transitional package. It can safely be removed.
+
+Package: qcom-fastcv-binaries-dev
+Architecture: all
+Section: oldlibs
+Priority: optional
+Depends: libfastcvopt-dev (= ${binary:Version}), ${misc:Depends}
+Description: transitional package for libfastcvopt-dev
+ This is a transitional package. It can safely be removed.
