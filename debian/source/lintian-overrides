@@ -1,0 +1,9 @@
+# nature of proprietary software
+source-contains-prebuilt-binary [qcom-fastcv-binaries1/arm64/usr/bin/*]
+source-contains-prebuilt-binary [qcom-fastcv-binaries1/arm64/usr/lib/aarch64-linux-gnu/*]
+source-contains-prebuilt-binary [qcom-fastcv-binaries1/arm64/usr/lib/dsp/cdsp/cv/*/*/*.so]
+source-contains-prebuilt-binary [qcom-fastcv-binaries1/arm64/usr/lib/debug/.dwz/aarch64-linux-gnu/*]
+source-is-missing [qcom-fastcv-binaries1/arm64/usr/bin/*]
+source-is-missing [qcom-fastcv-binaries1/arm64/usr/lib/aarch64-linux-gnu/*]
+source-is-missing [qcom-fastcv-binaries1/arm64/usr/lib/dsp/cdsp/cv/*/*/*.so]
+source-is-missing [qcom-fastcv-binaries1/arm64/usr/lib/debug/.dwz/aarch64-linux-gnu/*]

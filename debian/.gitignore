@@ -1,0 +1,10 @@
+/.debhelper/
+/*.debhelper.log
+/*.substvars
+/debhelper-build-stamp
+/files
+/libfastcvopt1/
+/libfastcvopt-dev/
+/qcom-fastcv-binaries/
+/qcom-fastcv-utils/
+/source/local-options

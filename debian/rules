@@ -1,29 +1,12 @@
 #!/usr/bin/make -f
 
-export DH_VERBOSE = 1
-
 %:
 	dh $@
 
-override_dh_auto_install:
-ifeq ($(DEB_HOST_ARCH),arm64)
-	mkdir -p $(CURDIR)/debian/libfastcvopt-dev/
-	cp -a data/qcom-fastcv-binaries-dev/arm64/* $(CURDIR)/debian/libfastcvopt-dev/
-endif
-ifeq ($(DEB_HOST_ARCH),arm64)
-	mkdir -p $(CURDIR)/debian/libfastcvopt1/
-	cp -a data/qcom-fastcv-binaries1/arm64/* $(CURDIR)/debian/libfastcvopt1/
-endif
-	:
+override_dh_strip:
+	dh_strip -X/usr/lib/dsp/cdsp/cv/
 
-override_dh_fixperms: ;
-
-override_dh_shlibdeps: ;
-
-override_dh_strip: ;
-
-override_dh_dwz: ;
-
-DEB_VERSION = $(shell dpkg-parsechangelog -S 'Version' | cut -d ':' -f 2)
-execute_after_dh_builddeb:
+# already run during proprietary build; currently not reincluded downstream as
+# the file layout is different; could try resplitting the dwz data
+override_dh_dwz:
 	:

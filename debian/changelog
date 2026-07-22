@@ -1,4 +1,4 @@
-qcom-fastcv-binaries (1.8.7-1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.7-0qcom1) UNRELEASED; urgency=medium
 
   [ Sandeep Singh  ]
   * Added Shikra LE DSP libraries for release
@@ -7,12 +7,15 @@ qcom-fastcv-binaries (1.8.7-1) UNRELEASED; urgency=medium
   * Added Lemans DSP libraries for release, compiled with Hexagon SDK and tools version 8.7.10.1
   * Artifactory tag: 260624.1
 
- [ Keerthi Gowda ]
- * d/control: rename binary packages to libfastcvopt1 and libfastcvopt-dev
-   to align with Debian naming convention.
- * d/control: add transitional packages qcom-fastcv-binaries1 and
-   qcom-fastcv-binaries-dev for backward compatibility.
- * d/rules: update install destination directories to match new package names.
+  [ Keerthi Gowda ]
+  * d/control: rename binary packages to libfastcvopt1 and libfastcvopt-dev
+    to align with Debian naming convention.
+  * d/control: add transitional packages qcom-fastcv-binaries1 and
+    qcom-fastcv-binaries-dev for backward compatibility.
+  * d/rules: update install destination directories to match new package names.
+  * Sync updates from qualcomm-linux/pkg-qcom-fastcv-binaries
+    qli-staging/debian/latest branch.
+  * d/watch: update artifact path from prebuilt_trixie to prebuilt_resolute.
 
  -- Sandeep Singh <sasingh@qti.qualcomm.com>  Wed, 17 Jun 2026 15:29:07 +0530
 

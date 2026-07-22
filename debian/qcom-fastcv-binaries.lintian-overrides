@@ -1,0 +1,18 @@
+# usr/lib/dsp/cdsp/cv/ is a collection of prebuilt, proprietary
+# binaries running on Hexagon DSPs (so a foreign architecture);
+# these are not built using Debian tooling and are not currently
+# trying to meet Debian expectations for host files
+arch-independent-package-contains-binary-or-object [usr/lib/dsp/cdsp/cv/*/*/*.so]
+shared-library-lacks-prerequisites [usr/lib/dsp/cdsp/cv/*/*/lib*.so]
+shared-library-lacks-stack-section [usr/lib/dsp/cdsp/cv/*/*/lib*.so]
+undeclared-elf-prerequisites (libc.so libdspCV_skel.so libfastcvadsp.so libgcc.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvdsp_skel.so]
+undeclared-elf-prerequisites (libc.so libdspCV_skel.so libgcc.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvadsp.so]
+undeclared-elf-prerequisites (libc.so libgcc.so) [usr/lib/dsp/cdsp/cv/*/*/libdspCV_skel.so]
+undeclared-elf-prerequisites (libdspCV_skel.so libfastcvadsp.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvdsp_skel.so]
+undeclared-elf-prerequisites (libdspCV_skel.so) [usr/lib/dsp/cdsp/cv/*/*/libfastcvadsp.so]
+
+# reported here https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries/issues/49
+spelling-error-in-binary implemenation implementation [usr/lib/dsp/cdsp/cv/*/*/libfastcvadsp.so]
+
+# probably false positives, but also reported
+spelling-error-in-binary DsFg Dfsg [usr/lib/dsp/cdsp/cv/*/libfastcvadsp.so]
