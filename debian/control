@@ -20,8 +20,8 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
  libfastcvopt1 (= ${binary:Version}),
-Breaks: qcom-fastcv-binaries-dev (<< 1.8.7)
-Replaces: qcom-fastcv-binaries-dev (<< 1.8.7)
+Breaks: qcom-fastcv-binaries-dev (<< 1.8.7-0qcom1~)
+Replaces: qcom-fastcv-binaries-dev (<< 1.8.7-0qcom1~)
 Description: Qualcomm FastCV - development files
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
@@ -36,11 +36,11 @@ Depends:
  ${shlibs:Depends},
 Recommends: qcom-fastcv-binaries
 Breaks:
- qcom-fastcv-binaries (<< 1.8.7),
- qcom-fastcv-binaries1 (<< 1.8.7),
+ qcom-fastcv-binaries (<< ${source:Version}),
+ qcom-fastcv-binaries (>> ${source:Version}),
+ qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~),
 Replaces:
- qcom-fastcv-binaries (<< 1.8.7),
- qcom-fastcv-binaries1 (<< 1.8.7),
+ qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~),
 Description: Qualcomm FastCV - shared libraries
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
@@ -53,8 +53,8 @@ Architecture: all
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
-Breaks: qcom-fastcv-binaries1 (<< 1.8.7)
-Replaces: qcom-fastcv-binaries1 (<< 1.8.7)
+Breaks: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
+Replaces: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
 Description: Qualcomm FastCV - DSP binaries
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
@@ -68,8 +68,8 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
  libfastcvopt1 (= ${binary:Version}),
-Breaks: qcom-fastcv-binaries1 (<< 1.8.7)
-Replaces: qcom-fastcv-binaries1 (<< 1.8.7)
+Breaks: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
+Replaces: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
 Description: Qualcomm FastCV - utilities
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
