@@ -1,0 +1,22 @@
+# Temporary workflow to validate dev-refactor/ubuntu/resolute build
+# using qcom-build-utils dev/watchfilesupport (uscan/watch support).
+# Remove once validated and merged.
+
+name: Build resolute (dev validation)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build ubuntu/resolute
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/pkg-build-reusable-workflow.yml@dev/watchfilesupport
+    with:
+      qcom-build-utils-ref: dev/watchfilesupport
+      debian-ref: dev-refactor/ubuntu/resolute
+    permissions:
+      contents: read
+      packages: read
+    secrets:
+      DEBUSINE_USER: ${{ secrets.DEBUSINE_USER }}
+      DEBUSINE_TOKEN: ${{ secrets.DEBUSINE_TOKEN }}
