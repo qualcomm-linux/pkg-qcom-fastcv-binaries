@@ -1,42 +1,98 @@
 Source: qcom-fastcv-binaries
 Maintainer: Pulkit Singh Tak <ptak@qti.qualcomm.com>
-Standards-Version: 4.6.2
-Section: misc
-Rules-Requires-Root: no
-Build-Depends: debhelper-compat (= 13)
+Uploaders:
+ Loïc Minier <loic.minier@oss.qualcomm.com>,
+Standards-Version: 4.7.4
+Section: non-free/libs
+Build-Depends:
+ debhelper-compat (= 13),
+Build-Depends-Arch:
+ libfastrpc1,
+ libglib2.0-0t64,
+Homepage: https://www.qualcomm.com/developer/software/qualcomm-fastcv-sdk
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries
+Vcs-Git: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries.git
 
 Package: libfastcvopt-dev
 Architecture: arm64
-Description: Qualcomm libfastcvopt - Development files
- Development files for Qualcomm fastcv library
-Section: libdevel
-Priority: optional
-Depends: ${misc:Depends}, libfastcvopt1 (= ${binary:Version}),
-Breaks: libfastcv-dev, qcom-fastcv-binaries-dev (<< ${source:Version})
-Replaces: libfastcv-dev, qcom-fastcv-binaries-dev (<< ${source:Version})
+Section: non-free/libdevel
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libfastcvopt1 (= ${binary:Version}),
+Breaks: qcom-fastcv-binaries-dev (<< 1.8.7-0qcom1~)
+Replaces: qcom-fastcv-binaries-dev (<< 1.8.7-0qcom1~)
+Description: Qualcomm FastCV - development files
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains the development files.
 
 Package: libfastcvopt1
 Architecture: arm64
-Description: Qualcomm libfastcvopt
- Qualcomm CPU and DSP optimized libs for running CV algorithms
-Section: libs
-Priority: optional
-Depends: ${misc:Depends}, libc6 (>= 2.38), libfastrpc-dev (>= 1.0.0)
-Breaks: libfastcv, qcom-fastcv-binaries, qcom-fastcv-binaries1 (<< ${source:Version})
-Replaces: libfastcv, qcom-fastcv-binaries, qcom-fastcv-binaries1 (<< ${source:Version})
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends: qcom-fastcv-binaries
+Breaks:
+ qcom-fastcv-binaries (<< ${source:Version}),
+ qcom-fastcv-binaries (>> ${source:Version}),
+ qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~),
+Replaces:
+ qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~),
+Description: Qualcomm FastCV - shared libraries
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains shared libraries for the host system.
+
+Package: qcom-fastcv-binaries
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Breaks: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
+Replaces: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
+Description: Qualcomm FastCV - DSP binaries
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains binaries for Hexagon DSPs.
+
+Package: qcom-fastcv-utils
+Architecture: arm64
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libfastcvopt1 (= ${binary:Version}),
+Breaks: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
+Replaces: qcom-fastcv-binaries1 (<< 1.8.7-0qcom1~)
+Description: Qualcomm FastCV - utilities
+ Qualcomm FastCV offers an optimized computer vision (CV) library
+ which frequently used vision processing functions and is designed
+ to take advantage of Hexagon DSPs.
+ .
+ This package contains a test utility.
 
 Package: qcom-fastcv-binaries1
-Architecture: all
+Architecture: arm64
 Section: oldlibs
 Priority: optional
-Depends: libfastcvopt1 (= ${binary:Version}), ${misc:Depends}
-Description: transitional package for libfastcvopt1
- This is a transitional package. It can safely be removed.
+Depends:
+ libfastcvopt1 (>= ${source:Version}),
+ qcom-fastcv-binaries (>= ${source:Version}),
+ qcom-fastcv-utils (>= ${source:Version}),
+ ${misc:Depends}
+Description: transitional package
+ This package is a transitional package. It can safely be removed.
 
 Package: qcom-fastcv-binaries-dev
-Architecture: all
+Architecture: arm64
 Section: oldlibs
 Priority: optional
-Depends: libfastcvopt-dev (= ${binary:Version}), ${misc:Depends}
+Depends: libfastcvopt-dev (>= ${source:Version}), ${misc:Depends}
 Description: transitional package for libfastcvopt-dev
  This is a transitional package. It can safely be removed.

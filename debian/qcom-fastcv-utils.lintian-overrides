@@ -1,0 +1,2 @@
+# we do not have control over how libraries are built
+hardening-no-bindnow [usr/bin/fastcv_simple_test64]
