@@ -1,6 +1,11 @@
-qcom-fastcv-binaries (1.8.7-0qli+staging3~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.9-0qli+staging1~) UNRELEASED; urgency=medium
 
-  * Unreleased changes
+  [ Sandeep Singh ]
+  * New upstream release
+    - Fixes symbol lookup error in libfastcvopt library and properly link to libcdsprpc.so; fixes: #48.
+    - Spelling errors have been addressed; update libfastcvopt1.lintian-overrides; fixes: #49.
+    - qcom-fastcv-binaries.pc now links to libcdsprpc.so instead of libadsprpc.so; fixes: #52.
+    - Fixes Stats module failure on cdsp for Kodiak 
 
  -- root <root@e139475d07e3>  Wed, 15 Jul 2026 07:55:12 +0000
 
