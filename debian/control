@@ -78,21 +78,21 @@ Description: Qualcomm FastCV - utilities
  This package contains a test utility.
 
 Package: qcom-fastcv-binaries1
-Architecture: all
+Architecture: arm64
 Section: oldlibs
 Priority: optional
 Depends:
- libfastcvopt1 (= ${binary:Version}),
- qcom-fastcv-binaries (= ${binary:Version}),
- qcom-fastcv-utils (= ${binary:Version}),
+ libfastcvopt1 (>= ${source:Version}),
+ qcom-fastcv-binaries (>= ${source:Version}),
+ qcom-fastcv-utils (>= ${source:Version}),
  ${misc:Depends}
 Description: transitional package
  This package is a transitional package. It can safely be removed.
 
 Package: qcom-fastcv-binaries-dev
-Architecture: all
+Architecture: arm64
 Section: oldlibs
 Priority: optional
-Depends: libfastcvopt-dev (= ${binary:Version}), ${misc:Depends}
+Depends: libfastcvopt-dev (>= ${source:Version}), ${misc:Depends}
 Description: transitional package for libfastcvopt-dev
  This is a transitional package. It can safely be removed.
