@@ -1,1 +1,1 @@
-qcom-fastcv-binaries1/arm64/usr/lib/aarch64-linux-gnu/*.so.* usr/lib/aarch64-linux-gnu
+data/qcom-fastcv-binaries1/arm64/usr/lib/aarch64-linux-gnu/*.so.* usr/lib/aarch64-linux-gnu

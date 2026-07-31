@@ -7,8 +7,8 @@ qcom-fastcv-binaries (1.8.8-0qcom1) UNRELEASED; urgency=medium
   * qcom-fastcv-binaries.pc now links to libcdsprpc.so instead of libadsprpc.so; fixes: #52.
   * Artifactory tag: 260719
  
- -- Pulkit Singh Tak <ptak@qti.qualcomm.com> Wed, 15 Jul 2026 07:55:12 +0000 
- 
+ -- Keerthi Gowda <kbalehal@qti.qualcomm.com>  Fri, 31 Jul 2026 00:21:27 -0700
+
 qcom-fastcv-binaries (1.8.7-0qcom1) unstable; urgency=medium
 
   [ Sandeep Singh  ]
