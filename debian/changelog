@@ -1,4 +1,15 @@
-qcom-fastcv-binaries (1.8.7-0qcom1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.8-0qcom1) UNRELEASED; urgency=medium
+ 
+  [ Pulkit Singh Tak ]
+  * New upstream release
+  * Fixes symbol lookup error in libfastcvopt library and properly link to libcdsprpc.so; fixes: #48.
+  * Spelling errors have been addressed; update libfastcvopt1.lintian-overrides and qcom-fastcv-binaries.lintian-overrides; fixes: #49.
+  * qcom-fastcv-binaries.pc now links to libcdsprpc.so instead of libadsprpc.so; fixes: #52.
+  * Artifactory tag: 260719
+ 
+ -- Pulkit Singh Tak <ptak@qti.qualcomm.com> Wed, 15 Jul 2026 07:55:12 +0000 
+ 
+qcom-fastcv-binaries (1.8.7-0qcom1) unstable; urgency=medium
 
   [ Sandeep Singh  ]
   * Added Shikra LE DSP libraries for release
