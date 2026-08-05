@@ -2,6 +2,7 @@ Source: qcom-fastcv-binaries
 Maintainer: Pulkit Singh Tak <ptak@qti.qualcomm.com>
 Uploaders:
  Loïc Minier <loic.minier@oss.qualcomm.com>,
+ Agathe Porte <agathe.porte@oss.qualcomm.com>,
 Standards-Version: 4.7.4
 Section: non-free/libs
 Build-Depends:
@@ -18,7 +19,6 @@ Architecture: arm64
 Section: non-free/libdevel
 Depends:
  ${misc:Depends},
- ${shlibs:Depends},
  libfastcvopt1 (= ${binary:Version}),
 Description: Qualcomm FastCV - development files
  Qualcomm FastCV offers an optimized computer vision (CV) library
@@ -47,7 +47,6 @@ Package: qcom-fastcv-binaries
 Architecture: all
 Depends:
  ${misc:Depends},
- ${shlibs:Depends},
 Description: Qualcomm FastCV - DSP binaries
  Qualcomm FastCV offers an optimized computer vision (CV) library
  which frequently used vision processing functions and is designed
