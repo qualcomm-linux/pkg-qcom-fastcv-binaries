@@ -1,20 +1,30 @@
-qcom-fastcv-binaries (1.8.8-0qcom1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.9-0qcom1) UNRELEASED; urgency=medium
+
+  [ Pulkit Singh Tak ]
+  * New upstream release.
+  * Fixes Stats module failure on cdsp for Kodiak.
+  * Artifactory tag: 260805
+
+ -- Pulkit Singh Tak <ptak@hu-ptak-hyd.qualcomm.com>  Wed, 05 Aug 2026 19:39:24 +0530
+
+qcom-fastcv-binaries (1.8.8-0qcom1) unstable; urgency=medium
  
   [ Pulkit Singh Tak ]
-  * New upstream release
+  * New upstream release.
   * Fixes symbol lookup error in libfastcvopt library and properly link to libcdsprpc.so; fixes: #48.
   * Spelling errors have been addressed; update libfastcvopt1.lintian-overrides and qcom-fastcv-binaries.lintian-overrides; fixes: #49.
   * qcom-fastcv-binaries.pc now links to libcdsprpc.so instead of libadsprpc.so; fixes: #52.
+  * Added soc id for Glymur to set env for cdsp libs.
   * Artifactory tag: 260719
- 
- -- Pulkit Singh Tak <ptak@qti.qualcomm.com> Wed, 15 Jul 2026 07:55:12 +0000 
- 
+
+-- Pulkit Singh Tak <ptak@qti.qualcomm.com>  Wed, 15 Jul 2026 07:55:12 +0000
+
 qcom-fastcv-binaries (1.8.7-0qcom1) unstable; urgency=medium
 
   [ Sandeep Singh  ]
-  * Added Shikra LE DSP libraries for release
-  * Updated HAP power APIs to make power voting target-agnostic
-  * Added DSP libraries for Glymur and Mahua, compiled using Hexagon SDK
+  * Added Shikra LE DSP libraries for release.
+  * Updated HAP power APIs to make power voting target-agnostic.
+  * Added DSP libraries for Glymur and Mahua, compiled using Hexagon SDK.
   * Added Lemans DSP libraries for release, compiled with Hexagon SDK and tools version 8.7.10.1
   * Artifactory tag: 260624.1
 
