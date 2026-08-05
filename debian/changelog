@@ -1,11 +1,11 @@
-qcom-fastcv-binaries (1.8.9-0qcom1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.9-0qcom1) resolute; urgency=medium
 
   [ Pulkit Singh Tak ]
   * New upstream release.
   * Fixes Stats module failure on cdsp for Kodiak.
   * Artifactory tag: 260805
 
- -- Pulkit Singh Tak <ptak@hu-ptak-hyd.qualcomm.com>  Wed, 05 Aug 2026 19:39:24 +0530
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 05 Aug 2026 17:15:13 +0000
 
 qcom-fastcv-binaries (1.8.8-0qcom1) unstable; urgency=medium
  
