@@ -1,8 +1,9 @@
-qcom-fastcv-binaries (1.8.9-0qli1~bpo13+1~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.9-0qli1~bpo13+1) trixie; urgency=medium
 
+  [ Agathe Porte ]
   * Rebuild for trixie.
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Mon, 17 Aug 2026 15:26:12 +0200
+ -- Debusine Action Bot <noreply@bot.invalid>  Mon, 17 Aug 2026 13:27:26 +0000
 
 qcom-fastcv-binaries (1.8.9-0qli1) forky; urgency=medium
 
