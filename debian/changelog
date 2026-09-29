@@ -1,6 +1,8 @@
-qcom-fastcv-binaries (1.8.9-0qcom2~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.10-0qcom1) UNRELEASED; urgency=medium
 
-  * WIP — update changelog before next release
+  [ Sandeep Singh ]
+  * New upstream release
+  * Move libfastcvdsp_stub.so to private folder; fixes: #51 
 
  -- Pulkit Singh Tak <ptak@qti.qualcomm.com>  Wed, 05 Aug 2026 17:26:21 +0000
 
