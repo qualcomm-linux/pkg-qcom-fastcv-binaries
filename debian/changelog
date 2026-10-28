@@ -1,6 +1,8 @@
-qcom-fastcv-binaries (1.8.10-0qli2~) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.11-0qli1) UNRELEASED; urgency=medium
 
-  * Unreleased changes
+  [ Sandeep Singh ]
+  * New upstream release
+  * Update the DSP libs installation path from libdir to datadir
 
  -- Debusine Action Bot <noreply@bot.invalid>  Tue, 29 Sep 2026 10:36:20 +0000
 
