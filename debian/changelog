@@ -1,3 +1,9 @@
+qcom-fastcv-binaries (1.8.12-0qli1~bpo13+1~) UNRELEASED; urgency=medium
+
+  * Rebuild for trixie.
+
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 25 Nov 2026 10:42:48 +0000
+
 qcom-fastcv-binaries (1.8.12-0qli1) forky; urgency=medium
 
   [ Sandeep Singh ]
