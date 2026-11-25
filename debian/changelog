@@ -1,3 +1,16 @@
+qcom-fastcv-binaries (1.8.12-0qli1) forky; urgency=medium
+
+  [ Sandeep Singh ]
+  * New upstream release
+  * Update the DSP libs installation path from libdir to datadir; fixes: #50
+
+  [ Agathe Porte ]
+  * lintian: fix mismatched overrides
+  * Depend on libfastrpc1 >= 1.0.7 for new DSP filepath
+  * Introduce autopkgtest calling fastcv_simple_test64
+
+ -- Debusine Action Bot <noreply@bot.invalid>  Wed, 25 Nov 2026 10:34:19 +0000
+
 qcom-fastcv-binaries (1.8.10-0qli1~bpo13+1) trixie; urgency=medium
 
   [ Agathe Porte ]
