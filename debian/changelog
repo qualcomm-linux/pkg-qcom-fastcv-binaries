@@ -1,10 +1,10 @@
-qcom-fastcv-binaries (1.8.12-0qcom1) UNRELEASED; urgency=medium
+qcom-fastcv-binaries (1.8.12-0qcom1) resolute; urgency=medium
 
   [ Sandeep Singh ]
   * New upstream release
   * Update the DSP libs installation path from libdir to datadir; fixes: #50
 
- -- Pulkit Singh Tak <ptak@qti.qualcomm.com>  Wed, 07 Oct 2026 14:40:47 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 25 Nov 2026 11:41:03 +0000
 
 qcom-fastcv-binaries (1.8.10-0qcom1) resolute; urgency=medium
 
