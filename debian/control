@@ -5,7 +5,7 @@ Section: non-free/libs
 Build-Depends:
  debhelper-compat (= 13),
 Build-Depends-Arch:
- libfastrpc1,
+ libfastrpc1 (>= 1.0.7),
  libglib2.0-0t64,
 Homepage: https://www.qualcomm.com/developer/software/qualcomm-fastcv-sdk
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-qcom-fastcv-binaries
