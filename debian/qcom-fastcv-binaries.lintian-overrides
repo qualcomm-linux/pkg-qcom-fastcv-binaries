@@ -7,13 +7,7 @@ arch-dependent-file-in-usr-share [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/*.so]
 # DSP libs are excluded from dh_strip (host strip can't handle Hexagon ELF);
 # some (e.g. Nord) are shipped unsigned by upstream
 unstripped-binary-or-object [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/*.so]
-shared-library-lacks-prerequisites [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/lib*.so]
 shared-library-lacks-stack-section [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/lib*.so]
 undeclared-elf-prerequisites (libc.so libdspCV_skel.so libfastcvadsp.so libgcc.so) [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/libfastcvdsp_skel.so]
 undeclared-elf-prerequisites (libc.so libdspCV_skel.so libgcc.so) [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/libfastcvadsp.so]
 undeclared-elf-prerequisites (libc.so libgcc.so) [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/libdspCV_skel.so]
-undeclared-elf-prerequisites (libdspCV_skel.so libfastcvadsp.so) [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/libfastcvdsp_skel.so]
-undeclared-elf-prerequisites (libdspCV_skel.so) [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/libfastcvadsp.so]
-
-# probably false positives, but also reported
-spelling-error-in-binary DsFg Dfsg [usr/share/hexagon-dsp/*/*/*/dsp/cdsp/libfastcvadsp.so]
