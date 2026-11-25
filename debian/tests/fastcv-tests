@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# This test needs to be run on a Glymur CRD or similarly supported hardware.
+# It can be run locally on the hardware itself with:
+#
+#     autopkgtest . -- null
+
+set -eux
+
+fastcv_simple_test64

@@ -1,0 +1,6 @@
+Tests: fastcv-tests
+Architecture: arm64
+Restrictions: allow-stderr
+Depends:
+ qcom-fastcv-utils,
+ @recommends@
