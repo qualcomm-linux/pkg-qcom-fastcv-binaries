@@ -4,7 +4,10 @@ qcom-fastcv-binaries (1.8.12-0qli1~) UNRELEASED; urgency=medium
   * New upstream release
   * Update the DSP libs installation path from libdir to datadir; fixes: #50
 
- -- Debusine Action Bot <noreply@bot.invalid>  Tue, 29 Sep 2026 10:36:20 +0000
+  [ Agathe Porte ]
+  * lintian: fix mismatched overrides
+
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 25 Nov 2026 10:04:08 +0000
 
 qcom-fastcv-binaries (1.8.10-0qli1) forky; urgency=medium
 
