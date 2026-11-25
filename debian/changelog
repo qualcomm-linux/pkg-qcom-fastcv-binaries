@@ -2,7 +2,7 @@ qcom-fastcv-binaries (1.8.12-0qli1~) UNRELEASED; urgency=medium
 
   [ Sandeep Singh ]
   * New upstream release
-  * Update the DSP libs installation path from libdir to datadir; fixes: #50 
+  * Update the DSP libs installation path from libdir to datadir; fixes: #50
 
  -- Debusine Action Bot <noreply@bot.invalid>  Tue, 29 Sep 2026 10:36:20 +0000
 
